@@ -11,7 +11,7 @@ Tests exist to demonstrate the functionality of the code.
 
 
 # Prerequisites
-* Python installed
+* Python3 installed
     * <https://www.python.org/downloads/>
 * Virtualenv installed
     * <https://virtualenv.pypa.io/en/latest/>
@@ -19,7 +19,7 @@ Tests exist to demonstrate the functionality of the code.
 
 # Usage/Setup Instructions
 1. From command line retrieve project from GitHub
-	* git clone https://github.com/DEV3L/python-json-serialization-examples.git
+    * git clone https://github.com/DEV3L/python-json-serialization-examples.git
 2. Create a Python virtualenv for this project
     * mkvirtualenv -p /usr/bin/python3 python-json-serialization-examples
     * python setup.py develop
