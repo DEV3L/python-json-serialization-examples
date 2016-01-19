@@ -19,10 +19,10 @@ class TestPopoSchema(TestCase):
 
     def test_to_json(self):
         popo_json = self.schema.dump(self.popo).data
-        assert popo_json.get("fooDict") == self.popo.foo_dict
-        assert popo_json.get("fooList") == self.popo.foo_list
-        assert popo_json.get("fooVar") == self.popo.foo_var
-        assert popo_json.get("num") == self.popo.num
+        assert popo_json.get('fooDict') == self.popo.foo_dict
+        assert popo_json.get('fooList') == self.popo.foo_list
+        assert popo_json.get('fooVar') == self.popo.foo_var
+        assert popo_json.get('num') == self.popo.num
 
     def test_to_json_many(self):
         popo_json_list = self.schema_many.dump([self.popo]).data
@@ -33,10 +33,10 @@ class TestPopoSchema(TestCase):
 
         popo_json = popo_json_list[0]
 
-        assert popo_json.get("fooDict") == self.popo.foo_dict
-        assert popo_json.get("fooList") == self.popo.foo_list
-        assert popo_json.get("fooVar") == self.popo.foo_var
-        assert popo_json.get("num") == self.popo.num
+        assert popo_json.get('fooDict') == self.popo.foo_dict
+        assert popo_json.get('fooList') == self.popo.foo_list
+        assert popo_json.get('fooVar') == self.popo.foo_var
+        assert popo_json.get('num') == self.popo.num
 
     def test_from_json(self):
         popo_json = self.schema.dump(self.popo).data
